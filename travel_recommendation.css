@@ -1,0 +1,283 @@
+body {
+  width: 100vw;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: image-set("./background2.jpg");
+  background-size: cover;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 139, 139, 0.75);
+  height: 2em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#brandingDiv {
+  display: flex;
+  gap: 1em;
+  font-style: italic;
+}
+
+#brandIcon {
+  color: white;
+  transform: rotate(-0.125turn) scale(2);
+}
+
+#brandName {
+  font-size: large;
+  font-weight: bold;
+}
+
+#brandName:hover {
+  color: white;
+}
+
+#pagesDiv {
+  display: flex;
+  gap: 1em;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: medium;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+#searchbarDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  gap: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 24px;
+  background-color: white;
+}
+
+#searchbar {
+  width: 100%;
+  border: 0;
+}
+
+#searchbar:focus {
+  outline: none;
+}
+
+#searchIcon {
+  border: 0;
+  height: 24px;
+  transform: scale(1.5);
+  color: darkcyan;
+}
+
+#searchIcon:hover,
+#searchIcon:active,
+#searchIcon:focus {
+  background-color: white;
+  color: dimgray;
+}
+
+.navButton {
+  width: 100px;
+  height: 28px;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 8px;
+  border-width: 0;
+}
+
+.navButton:hover {
+  background-color: dimgray;
+}
+
+#heroDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: 80vh;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30px;
+  font-size: 30px;
+}
+
+.slogan {
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.pitch {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#bookBtn {
+  margin-top: 12px;
+  width: 128px;
+  height: 32px;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 8px;
+  border-width: 0;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+#bookBtn:hover {
+  background-color: dimgray;
+}
+
+/* about us */
+
+#searchbarDivAbout {
+  visibility: hidden;
+}
+
+#heroDivAbout {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 4em;
+  gap: 24px;
+}
+
+#aboutUs {
+  margin-left: 1em;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.aboutUs {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+  margin-top: 3em;
+  margin-left: 3em;
+}
+
+.aboutUs h1 {
+  margin: 0;
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+  margin-top: 3em;
+  margin-left: 5em;
+  gap: 12px;
+}
+.teamCardh1 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 1em;
+  font-size: 24px;
+}
+
+.teamCardh1 h1 {
+  font-weight: 800;
+}
+
+.teamCard {
+  display: flex;
+  width: 200px;
+  height: 120px;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1em;
+  border-radius: 1em;
+  gap: 1em;
+}
+
+.teamDetails {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.teamCard p {
+  margin: 0;
+}
+
+/* contact */
+
+#contactUs {
+  margin-left: 1em;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+#touch {
+  margin-top: 3em;
+  margin-left: 4em;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40vw;
+  height: 32vw;
+  margin-top: 10em;
+  padding: 2em;
+  border-radius: 1em;
+  gap: 0.75em;
+}
+
+#form input,
+#form textarea {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 0.75em;
+  border-width: 1px;
+  border-radius: 4px;
+  border-color: darkcyan;
+}
+
+#form input:focus,
+#form textarea:focus {
+  outline: none;
+}
+
+#form button {
+  height: 2.5em;
+  background-color: darkcyan;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+}
+
+#form button:hover {
+  background-color: dimgray;
+}

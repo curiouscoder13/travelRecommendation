@@ -23,8 +23,7 @@
         <a href="./about_us.html" class="pages" id="about">About Us</a>
         <a href="./contact_us.html" class="pages" id="contact">Contact Us</a>
       </div>
-
-      <div id="searchbarDiv">
+      <div id="searchbarDivAbout">
         <input
           type="text"
           id="searchbar"
@@ -37,24 +36,36 @@
         <button class="navButton" id="clearButton">Clear</button>
       </div>
     </nav>
-    <div id="heroDiv">
+    <div id="heroDivAbout">
       <div id="social">
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
-      <div>
-        <h1 class="slogan">JOURNEY</h1>
-        <h1 class="slogan">BEYOND</h1>
-        <h1 class="slogan">LIMITS</h1>
-        <p class="pitch">
-          Dive into extraordinary adventures with ease. Explore breathtaking
-          destinations, uncover hidden treasures, and make every moment count.
-          Enjoy a hassle-free travel experience tailored just for you.
-        </p>
-        <button id="bookBtn">BOOK NOW</button>
+      <div id="contactForm">
+        <div id="contactUs">CONTACT US</div>
+        <div id="touch">Get in touch</div>
       </div>
+      <form id="form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          placeholder="Enter your message"
+          rows="8"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </body>
 </html>
