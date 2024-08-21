@@ -33,28 +33,31 @@
         <button id="searchIcon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-        <button class="navButton" id="searchButton">Search</button>
-        <button class="navButton" id="clearButton">Clear</button>
+        <button class="navButton" id="searchButton" type="submit">
+          Search
+        </button>
+        <button class="navButton" id="clearButton" type="reset">Clear</button>
       </div>
     </nav>
-    <div id="heroDiv">
-      <div id="social">
+
+    <div id="heroContainer">
+      <div id="socialContainer">
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
-      <div>
-        <h1 class="slogan">JOURNEY</h1>
-        <h1 class="slogan">BEYOND</h1>
-        <h1 class="slogan">LIMITS</h1>
-        <p class="pitch">
+      <div id="sloganContainer">
+        <h1 id="slogan">JOURNEY BEYOND LIMITS</h1>
+        <p id="pitch">
           Dive into extraordinary adventures with ease. Explore breathtaking
           destinations, uncover hidden treasures, and make every moment count.
           Enjoy a hassle-free travel experience tailored just for you.
         </p>
         <button id="bookBtn">BOOK NOW</button>
       </div>
+      <div id="suggestionsContainer"></div>
     </div>
+    <script src="./travel_recommendation.js"></script>
   </body>
 </html>

@@ -4,8 +4,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-image: image-set("./background2.jpg");
-  background-size: cover;
+  background-image: url("./background.webp");
+  background-size: 100vw 100vh;
   color: white;
 }
 
@@ -13,7 +13,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 139, 139, 0.75);
+  background-color: rgba(0, 100, 100, 0.75);
   height: 2em;
   padding-left: 20px;
   padding-right: 20px;
@@ -85,7 +85,7 @@ a:hover {
   border: 0;
   height: 24px;
   transform: scale(1.5);
-  color: darkcyan;
+  color: rgba(0, 100, 100, 0.75);
 }
 
 #searchIcon:hover,
@@ -108,7 +108,7 @@ a:hover {
   background-color: dimgray;
 }
 
-#heroDiv {
+/* #heroDiv {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   height: 80vh;
@@ -123,6 +123,10 @@ a:hover {
   gap: 20px;
   width: 30px;
   font-size: 30px;
+}
+
+#sloganDiv {
+  margin-left: -12em;
 }
 
 .slogan {
@@ -141,8 +145,8 @@ a:hover {
 #bookBtn {
   margin-top: 12px;
   width: 128px;
-  height: 32px;
-  background-color: darkcyan;
+  height: 36px;
+  background-color: rgba(1, 185, 185, 0.75);
   color: white;
   border-radius: 8px;
   border-width: 0;
@@ -153,11 +157,11 @@ a:hover {
 
 #bookBtn:hover {
   background-color: dimgray;
-}
+} */
 
 /* about us */
 
-#searchbarDivAbout {
+/* #searchbarDivAbout {
   visibility: hidden;
 }
 
@@ -176,11 +180,14 @@ a:hover {
   font-weight: 800;
 }
 
+#aboutUsDiv {
+  margin-top: 4em;
+}
+
 .aboutUs {
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 1em;
-  margin-top: 3em;
   margin-left: 3em;
 }
 
@@ -229,9 +236,31 @@ a:hover {
   margin: 0;
 }
 
+.teamImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgb(1, 1, 107);
+  border-radius: 8px;
+}
+
+.teamPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 24px;
+  background-color: rgb(1, 1, 107);
+  border-radius: 8px;
+  font-size: small;
+  font-weight: bold;
+} */
+
 /* contact */
 
-#contactUs {
+/* #contactUs {
   margin-left: 1em;
   font-size: 60px;
   font-weight: 800;
@@ -262,7 +291,7 @@ a:hover {
   padding: 0.75em;
   border-width: 1px;
   border-radius: 4px;
-  border-color: darkcyan;
+  border-color: rgba(0, 100, 100, 0.75);
 }
 
 #form input:focus,
@@ -272,7 +301,339 @@ a:hover {
 
 #form button {
   height: 2.5em;
+  background-color: rgba(0, 100, 100, 0.75);
+  color: white;
+  border: 0;
+  border-radius: 4px;
+}
+
+#form button:hover {
+  background-color: dimgray;
+} */
+
+/* floating suggestion cards */
+
+/* .suggestionCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 32vw;
+  height: 32vw;
+  background-color: white;
+  color: black;
+  margin-left: 11em;
+  margin-top: -2em;
+  border-radius: 1em;
+  box-shadow: 5px 5px 3px rgb(0 0 0 / 60%);
+}
+
+#suggestionImg {
+  width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+#suggestionDetails {
+  padding-left: 1em;
+  padding-right: 1em;
+  gap: 0.5em;
+}
+
+#suggestionDetails p {
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+#suggestionLocation {
+  font-weight: 800;
+}
+
+#suggestionDescription {
+  font-size: small;
+  color: rgb(134, 134, 134);
+}
+
+#suggestionVisitBtn {
+  margin-top: 1em;
+  width: 64px;
+  height: 32px;
   background-color: darkcyan;
+  color: white;
+  border-radius: 8px;
+  border-width: 0;
+}
+
+#suggestionVisitBtn:hover {
+  background-color: dimgray;
+} */
+
+#heroContainer {
+  display: grid;
+  grid: auto-flow / 3vw 50vw 30vw;
+  height: 80vh;
+  margin-top: 2vh;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  gap: 2em;
+}
+
+#socialContainer {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3vh;
+  gap: 1em;
+}
+
+#sloganContainer {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2em;
+  padding-right: 12em;
+}
+
+#slogan {
+  margin: 0;
+  font-size: 5vw;
+  font-weight: 800;
+}
+
+#pitch {
+  margin: 0;
+  padding-top: 2vh;
+  width: 30vw;
+
+  font-size: 1em;
+}
+
+#bookBtn {
+  margin-top: 4vh;
+  width: 8em;
+  height: 4vh;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 0.5em;
+  border-width: 0;
+}
+
+#bookBtn:hover {
+  background-color: dimgray;
+}
+
+#suggestionContainer {
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10vw;
+}
+
+.suggestionCard {
+  background-color: white;
+  color: black;
+  border-radius: 1em;
+}
+
+#suggestionImg {
+  width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+#suggestionDetails {
+  padding-left: 1em;
+  padding-right: 1em;
+  gap: 0.5em;
+}
+
+#suggestionLocation {
+  font-weight: 600;
+}
+
+#suggestionDescription {
+  font-size: small;
+  color: rgb(134, 134, 134);
+}
+
+#suggestionVisitBtn {
+  margin-bottom: 2vh;
+  width: 6vw;
+  height: 3vh;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 0.5em;
+  border-width: 0;
+}
+
+#suggestionVisitBtn:hover {
+  background-color: dimgray;
+}
+
+/* about us */
+
+#searchbarDivAbout {
+  visibility: hidden;
+}
+
+#heroDivAbout {
+  display: grid;
+  grid: auto-flow / 3vw 90vw;
+  height: 70vh;
+  margin-top: 2vh;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  gap: 2em;
+}
+
+#aboutUsContainer {
+  grid-column: 2;
+  width: 100%;
+}
+
+#aboutUs {
+  margin: 0;
+  padding-top: 2vh;
+  width: 30vw;
+  font-size: 5vw;
+  font-weight: 800;
+}
+
+#aboutUsDetails {
+  margin: 0;
+  margin-top: 6vh;
+  padding: 2vh;
+  border-radius: 0.5em;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+#teamsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6vh;
+  margin-left: 8vw;
+}
+
+#teamCardName {
+  width: 8vw;
+  font-size: 4vw;
+  font-weight: 800;
+  margin-right: 8vw;
+}
+
+.teamCard {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0.5em;
+  height: 100%;
+  padding: 2vh;
+  gap: 2vh;
+}
+
+.teamImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 0.25em;
+  background-color: rgb(0, 0, 163);
+}
+
+.teamDetails h3 {
+  margin: 0;
+}
+
+.teamDetails p {
+  margin: 0;
+  margin-top: 0.5em;
+  font-size: small;
+}
+
+.teamPosition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2em;
+  border-radius: 0.25em;
+  background-color: rgb(0, 0, 163);
+  font-size: 0.75em;
+  font-weight: 800;
+}
+
+/* contact */
+
+#heroDivContact {
+  display: grid;
+  grid: auto-flow / 3vw 45vw 45vw;
+  height: 80vh;
+  margin-top: 2vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  gap: 2em;
+}
+
+#contactNameContainer {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+#contactUs {
+  margin: 0;
+  font-size: 5vw;
+  font-weight: 800;
+}
+
+#touch {
+  margin-top: 4vh;
+}
+
+#formContainer {
+  grid-column: 3;
+  display: grid;
+  width: 100%;
+  align-items: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2vh;
+  gap: 1em;
+  border-radius: 1em;
+}
+
+#form input,
+#form textarea {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 0.75em;
+  border-width: 1px;
+  border-radius: 4px;
+  border-color: rgba(0, 100, 100, 0.75);
+}
+
+#form input:focus,
+#form textarea:focus {
+  outline: none;
+}
+
+#form button {
+  height: 2.5em;
+  background-color: rgba(0, 100, 100, 0.75);
   color: white;
   border: 0;
   border-radius: 4px;
