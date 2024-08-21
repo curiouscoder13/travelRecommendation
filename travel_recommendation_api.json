@@ -27,7 +27,7 @@
         },
         {
           "name": "Kyoto, Japan",
-          "imageUrl": "enter_your_image_for_kyoto.jpg",
+          "imageUrl": "./images/kyoto.webp",
           "description": "Known for its historic temples, gardens, and traditional tea houses."
         }
       ]
